@@ -54,10 +54,11 @@ public class TicketActivity extends BaseActivity {
     private ActivityTicketBinding binding;
     private ItemDomain object;
 
-
+    // Hiding Key
     private static final Dotenv dotenv = Dotenv.load();
     private static final String PublishableKey = dotenv.get("PUBLISHABLE_KEY");
     private static final String SecretKey = dotenv.get("SECRET_KEY");
+
     private String CustomerId;
     private String EphemeralKey;
     private String ClientSecret;
