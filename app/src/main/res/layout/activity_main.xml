@@ -10,19 +10,21 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="70dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_marginTop="60dp"
+                android:layout_height="match_parent"
                 android:layout_marginStart="24dp"
-                android:layout_marginEnd="24dp"
-                android:layout_height="match_parent">
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="24dp">
 
                 <ImageView
                     android:id="@+id/imageView"
@@ -51,65 +53,65 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView3" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:background="@drawable/grey_bg"-->
-<!--                android:layout_marginStart="24dp"-->
-<!--                android:layout_marginEnd="24dp"-->
-<!--                android:layout_marginTop="16dp"-->
-<!--                android:layout_height="match_parent">-->
+            <!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:background="@drawable/grey_bg"-->
+            <!--                android:layout_marginStart="24dp"-->
+            <!--                android:layout_marginEnd="24dp"-->
+            <!--                android:layout_marginTop="16dp"-->
+            <!--                android:layout_height="match_parent">-->
 
-<!--                <EditText-->
-<!--                    android:id="@+id/edtSearch"-->
-<!--                    android:layout_width="0dp"-->
-<!--                    android:layout_height="50dp"-->
-<!--                    android:padding="8dp"-->
-<!--                    android:drawableStart="@drawable/search_icon"-->
-<!--                    android:drawablePadding="8dp"-->
-<!--                    android:ems="10"-->
-<!--                    android:inputType="text"-->
-<!--                    android:hint="Street, Address, City, ..."-->
-<!--                    android:textSize="16sp"-->
-<!--                    android:textColor="@color/darkBlue"-->
-<!--                    android:background="#00ffffff"-->
-<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
-<!--                    app:layout_constraintEnd_toStartOf="@+id/search"-->
-<!--                    app:layout_constraintStart_toStartOf="parent"-->
-<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+            <!--                <EditText-->
+            <!--                    android:id="@+id/edtSearch"-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="50dp"-->
+            <!--                    android:padding="8dp"-->
+            <!--                    android:drawableStart="@drawable/search_icon"-->
+            <!--                    android:drawablePadding="8dp"-->
+            <!--                    android:ems="10"-->
+            <!--                    android:inputType="text"-->
+            <!--                    android:hint="Street, Address, City, ..."-->
+            <!--                    android:textSize="16sp"-->
+            <!--                    android:textColor="@color/darkBlue"-->
+            <!--                    android:background="#00ffffff"-->
+            <!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                    app:layout_constraintEnd_toStartOf="@+id/search"-->
+            <!--                    app:layout_constraintStart_toStartOf="parent"-->
+            <!--                    app:layout_constraintTop_toTopOf="parent" />-->
 
-<!--                <TextView-->
-<!--                    android:id="@+id/search"-->
-<!--                    android:layout_width="85dp"-->
-<!--                    android:layout_height="42dp"-->
-<!--                    android:text="Search"-->
-<!--                    android:gravity="center"-->
-<!--                    android:textColor="@color/white"-->
-<!--                    android:background="@drawable/blue_bg"-->
-<!--                    android:layout_marginTop="2dp"-->
-<!--                    android:layout_marginEnd="4dp"-->
-<!--                    android:layout_marginBottom="2dp"-->
-<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
-<!--                    app:layout_constraintEnd_toEndOf="parent"-->
-<!--                    app:layout_constraintTop_toTopOf="parent" />-->
-<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
-<!--            <SearchView-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginTop="16dp"-->
-<!--                android:layout_marginStart="12dp"-->
-<!--                android:layout_marginEnd="12dp"-->
-<!--                android:id="@+id/search"-->
-<!--                android:iconifiedByDefault="false"-->
-<!--                android:searchHintIcon="@null"-->
-<!--                android:queryHint="Search..."-->
-<!--                android:focusable="false"-->
-<!--                android:background="@drawable/lavender_border"-->
-<!--                android:searchIcon="@drawable/search_icon"/>-->
+            <!--                <TextView-->
+            <!--                    android:id="@+id/search"-->
+            <!--                    android:layout_width="85dp"-->
+            <!--                    android:layout_height="42dp"-->
+            <!--                    android:text="Search"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:textColor="@color/white"-->
+            <!--                    android:background="@drawable/blue_bg"-->
+            <!--                    android:layout_marginTop="2dp"-->
+            <!--                    android:layout_marginEnd="4dp"-->
+            <!--                    android:layout_marginBottom="2dp"-->
+            <!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                    app:layout_constraintTop_toTopOf="parent" />-->
+            <!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+            <!--            <SearchView-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="16dp"-->
+            <!--                android:layout_marginStart="12dp"-->
+            <!--                android:layout_marginEnd="12dp"-->
+            <!--                android:id="@+id/search"-->
+            <!--                android:iconifiedByDefault="false"-->
+            <!--                android:searchHintIcon="@null"-->
+            <!--                android:queryHint="Search..."-->
+            <!--                android:focusable="false"-->
+            <!--                android:background="@drawable/lavender_border"-->
+            <!--                android:searchIcon="@drawable/search_icon"/>-->
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_marginTop="12dp"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp">
 
                 <androidx.viewpager2.widget.ViewPager2
                     android:id="@+id/viewPagerSlider"
@@ -120,7 +122,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" >
+                    app:layout_constraintTop_toTopOf="parent">
 
 
                 </androidx.viewpager2.widget.ViewPager2>
@@ -145,7 +147,7 @@
                     android:id="@+id/recyclerViewCategory"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                     android:clipToPadding="false"
+                    android:clipToPadding="false"
                     android:paddingStart="4dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -166,8 +168,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="24dp"
                 android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
                 android:layout_marginEnd="24dp"
                 android:orientation="horizontal">
 
@@ -177,15 +179,15 @@
                     android:layout_weight="1"
                     android:text="Recommended"
                     android:textColor="@color/darkBlue"
-                    android:textStyle="bold"
-                    android:textSize="16sp"/>
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="14sp"
+                    android:text="see all"
                     android:textColor="@color/blue"
-                    android:text="see all" />
+                    android:textSize="14sp" />
             </LinearLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -196,9 +198,9 @@
                     android:id="@+id/recyclerViewRecommended"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:clipToPadding="false"
                     android:paddingStart="12dp"
                     android:paddingEnd="12dp"
-                    android:clipToPadding="false"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"

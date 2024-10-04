@@ -2,6 +2,7 @@ package com.example.travel_app.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.WindowManager;
 
 import androidx.activity.EdgeToEdge;
@@ -46,6 +47,8 @@ public class DetailActivity extends BaseActivity {
         Glide.with(DetailActivity.this)
                 .load(object.getPic())
                 .into(binding.pic);
+
+        Log.i("Image Link", object.getTitle() + " " + object.getPic());
 
         binding.bookTour.setOnClickListener(view -> {
             Intent intent  = new Intent(DetailActivity.this, TicketActivity.class);

@@ -58,4 +58,6 @@ dependencies {
 
     implementation(platform("com.google.firebase:firebase-bom:33.2.0"))
     implementation("com.google.firebase:firebase-auth")
+    implementation ("io.github.cdimascio:dotenv-java:2.2.0")
+
 }

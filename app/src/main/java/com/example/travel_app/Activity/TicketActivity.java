@@ -48,13 +48,16 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 
+import io.github.cdimascio.dotenv.Dotenv;
+
 public class TicketActivity extends BaseActivity {
     private ActivityTicketBinding binding;
     private ItemDomain object;
 
-    private static final String PublishableKey = "pk_test_51PtmtbGVtCLjpubky9BQEhwnnXZB02orUsXVf08PmBwttHBqhVRx2xRh0fy97bcCAMh4upJqbWiIsn21lcFaXj5000lI667pPu";
-    private static final String SecretKey = "sk_test_51PtmtbGVtCLjpubktMV8AMkfDrYL9hMrSgDOZmdTDuYSrN5AX7kImn5F3pptnbpzsbsFKmLheEc63X9OwK1o5C5y00Ag7WU1jg";
 
+    private static final Dotenv dotenv = Dotenv.load();
+    private static final String PublishableKey = dotenv.get("PUBLISHABLE_KEY");
+    private static final String SecretKey = dotenv.get("SECRET_KEY");
     private String CustomerId;
     private String EphemeralKey;
     private String ClientSecret;
